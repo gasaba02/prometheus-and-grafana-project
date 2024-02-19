@@ -6,7 +6,7 @@ global:
 scrape_configs:
   - job_name: 'prometheus'
     static_configs:
-      - targets: ['172.31.34.12:9090']
+      - targets: ['172.31.23.39:9090', '172.31.17.221:9100', '172.31.21.119:9100']
   - job_name: 'node'
     ec2_sd_configs:
       - region: us-east-1
